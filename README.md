@@ -1,7 +1,7 @@
 # PACK-E
 MSP432 Robot Chassis with ESP32 Camera Detection
 
-## Project Description:
+## Short Project Description:
 Using the ESP32CAM to detect and classify packages and then move to package and grab it.
 Custom-trained object detection model using:
 - FOMO MobileNetV2 0.1 as neural network architecture
@@ -21,10 +21,11 @@ For computer vision part:
 - UART
 - Servo
 - Motor
-- Freenove ESP32S3 Wroom 1 with OV3660
+- Freenove ESP32S3 WROOM with OV3660
 - Ultrasonic - For finding object location
 
 ## Original conceptualization
+- Used serial debug 
 
 ## Obstacles faced
 - Kept giving me brownout detector error - fixed it by removing line camera.brownout.disable();
@@ -40,3 +41,5 @@ For computer vision part:
 ## Possible improvements with more time:
 - Stereo Camera Pair with distance estimation
 - Laptop Command via ROS2
+- Finetuned detection
+- Functional servo robotic arm
